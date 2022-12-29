@@ -1,0 +1,105 @@
+:root{
+    --font-family: 'Hubballi', cursive, sans-serif;
+    --font-color: rgb(44, 44, 44);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: 18px;
+    background-color: aqua;
+    color: var(--font-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+h1{
+    font-size: 2.2rem;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+header{
+    /* fixed at the top */
+    position: fixed;
+    background-color: rosybrown;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+}
+
+header > h2{
+    width: 50%;
+}
+
+#navbar{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbar > a{
+    display: flex;
+    align-items: center;
+}
+
+#welcome-section{
+    background-color: azure;
+    height: 100vh;
+}
+
+#welcome-section{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#projects > div{
+    display: flex;
+    justify-content: center;
+}
+
+.project-title{
+    text-align: center;
+    margin: 50px;
+}
+
+#projects > div > div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+}
+
+.project-tile{
+    width: fit-content;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+}
+
+.project-tile > img {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid black;
+}
