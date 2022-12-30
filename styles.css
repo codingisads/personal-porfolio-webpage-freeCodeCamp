@@ -12,8 +12,9 @@
 body{
     font-family: var(--font-family);
     font-size: 18px;
-    background-color: aqua;
+    background-color: rgb(223, 223, 223);
     color: var(--font-color);
+    line-height: 2rem;
 }
 
 a{
@@ -34,14 +35,20 @@ img{
 header{
     /* fixed at the top */
     position: fixed;
-    background-color: rosybrown;
+    background-color: rgb(235, 179, 179);
     padding: 20px;
     width: 100%;
     display: flex;
+    border-bottom: 1px solid black;
+}
+
+nav > a:hover{
+    color: white
 }
 
 header > h2{
     width: 50%;
+    padding-left: 50px;
 }
 
 #navbar{
@@ -55,9 +62,32 @@ header > h2{
     align-items: center;
 }
 
+
+@media (max-width: 647px) {
+    #navbar > a{
+        display: block;
+    }
+    header, header > h2{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    header > h2{
+        font-size: 32px;
+    }
+    #navbar{
+        display: block;
+        text-align: center;
+        margin: 12px auto;
+        width: 100%;
+    }
+}
+
 #welcome-section{
     background-color: azure;
     height: 100vh;
+    border-bottom: 1px solid black;
 }
 
 #welcome-section{
@@ -67,16 +97,25 @@ header > h2{
     justify-content: center;
 }
 
+
+@media (max-width: 647px) {
+    #welcome-section > div > h1{
+        font-size: 44px;
+    }
+}
+
 #projects {
     display: block;
-    margin: 0 auto;
-    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 #projects > div{
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
+
 
 .project-title{
     text-align: center;
@@ -89,11 +128,17 @@ header > h2{
     gap: 80px;
 }
 
+#projects > div > div > div> a{
+    text-decoration:1px underline;
+}
+
 .project-tile{
-    width: fit-content;
+    width: -moz-min-content;
+    width: min-content;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 35px;
+    padding-bottom: 20px;
 }
 
 .project-tile > img {
@@ -103,3 +148,90 @@ header > h2{
     border-bottom-right-radius: 25px;
     border: 1px solid black;
 }
+
+@media (max-width: 647px) {
+    #projects > div > div{
+        display: block;
+    }
+    .project-tile{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1003px) {
+    /* #projects > div > div{
+        gap: 40px;
+    }
+    .project-tile > img{
+        width: 200px;
+        height: auto;
+    } */
+    #projects > div > div{
+        display: block;
+    }
+    .project-tile{
+        margin-bottom: 50px;
+    }
+}
+
+.btn{
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid black;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.btn:hover{
+    transition: 0.5s;
+    background-color: rgb(215, 183, 233);
+    color: rgb(0, 0, 0);
+    
+}
+
+a:hover{
+    transition: 0.5s;
+    color: rgb(168, 119, 197);
+}
+
+
+
+#contact-me{
+    text-align: center;
+}
+
+#contact-me > h1{
+    margin-bottom: 50px;
+}
+
+#contact-me > div{
+    margin: 0 auto;
+}
+
+#contact-me > div >  *, #contact-me > div {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 647px) {
+    #contact-me > div >  *, #contact-me > div {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+footer{
+    margin-top: 200px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 70px;
+    border-top: 1px solid black;
+    font-weight: 600;
+}
+
+
