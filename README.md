@@ -6,5 +6,5 @@
 
 <p>You can check how it looks visiting the link below:</p>
 
-<h3><a href="https://product-landing-page-codingisads.netlify.app" alt="portfolio-codingisads" target="_blank">Sticker Workshop Product Page</a></h3>
+<h3><a href="https://portfolio-codingisads.netlify.app" alt="portfolio-codingisads" target="_blank">Portfolio Page</a></h3>
 
